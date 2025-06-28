@@ -1,3 +1,4 @@
+import { QueryClientProvider, useQuery } from "@tanstack/react-query";
 import "./globals.css";
 
 export const metadata = {
@@ -6,11 +7,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const queryClient = useQuery()
   return (
     <html lang="en">
       <body>
-        
+        <QueryClientProvider client={queryClient}>
         {children}
+        </QueryClientProvider>
       </body>
     </html>
   );

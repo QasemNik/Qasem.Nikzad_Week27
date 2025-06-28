@@ -126,6 +126,8 @@ client side rendering
 │   ├── auth.js           # JWT/Refresh Token logic, auth helpers
 |   └── utils.js          # General utility functions (formatData etc.)
 |
+├── providers/         
+│   └── ...
 ├── shared/
 |   └── constants.js      # Global constants (URLs, local storage keys etc.)
 |    ├── schemas/         # New directory for Zod/Yup schemas
